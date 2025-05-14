@@ -29,21 +29,19 @@ Follow these steps to get your local copy of the project running:
 Navigate to the project directory:
 
 bash
-Copy
-Edit
+
 cd Student_Performance_Analytics
 Install frontend dependencies:
 
 bash
-Copy
-Edit
+
+
 cd frontend
 npm install
 Install backend dependencies:
 
 bash
-Copy
-Edit
+
 cd backend
 npm install
 Set up your environment variables:
@@ -55,8 +53,7 @@ Run the application:
 Frontend:
 
 bash
-Copy
-Edit
+
 cd frontend
 npm start
 This will start the React development server (usually on http://localhost:3000).
@@ -64,8 +61,7 @@ This will start the React development server (usually on http://localhost:3000).
 Backend:
 
 bash
-Copy
-Edit
+
 cd backend
 npm start
 This will start the Node.js server (usually on http://localhost:5000).
@@ -88,6 +84,6 @@ Improved Data Filters: Enhanced filtering options for performance analysis.
 💬 Contact
 For any questions or collaboration opportunities, feel free to reach out:
 
-Email: aman.kaushal@example.com
+Email: amankau2000@gmail.com
 
-GitHub: @aman23-cmd
+GitHub: aman23-cmd
