@@ -1,89 +1,105 @@
 # Student Performance Analytics 🚀
 
-A full-stack web application built to visualize and analyze student performance data in real-time. This project helps educational institutions and students track academic progress, identify improvement areas, and optimize learning outcomes using insightful data analytics.
+# 📊 Student Performance Analytics
 
-## 🌟 Features
+A full-stack web application to analyze and visualize student performance using modern web technologies and **Power BI integration**.
 
-- **Real-time Performance Analytics**: Dynamic, real-time charts and graphs to analyze student performance over time.
-- **Interactive Dashboards**: Engaging and interactive user interfaces to track academic progress.
-- **Data-Driven Insights**: Visual representation of student grades, attendance, and overall performance trends.
-- **User Authentication**: Secure sign-up and login functionality to access personalized dashboards.
-- **Modern UI**: Sleek, responsive frontend built using **React** and **Tailwind CSS** for a top-notch user experience.
-- **Backend API**: Efficient backend services powered by **Node.js** and **Express** for handling user data and performance metrics.
-- **Database Integration**: Seamless integration with **MongoDB/MySQL** for storing student data.
+---
 
-## 🔧 Technologies Used
+## 🚀 Tech Stack
 
-- **Frontend**: React, Tailwind CSS
-- **Backend**: Node.js, Express
-- **Database**: MongoDB/MySQL (select your preference)
-- **Charting Libraries**: Chart.js, D3.js for data visualization
+- **Frontend**: React.js + Tailwind CSS
+- **Backend**: Node.js + Express
+- **Database**: MongoDB / MySQL (customizable)
+- **Visualization**:
+  - In-app charts using Chart.js (optional)
+  - 🔥 Power BI / Tableau Embedded Dashboards
 
-## 🚀 How to Run the Project Locally
+---
 
-Follow these steps to get your local copy of the project running:
+## 📌 Features
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/aman23-cmd/Student_Performance_Analytics.git
-Navigate to the project directory:
+- 👥 Student login/signup
+- 📈 Performance graphs (marks, attendance, subject-wise analysis)
+- 💡 Real-time analytics dashboard
+- ⬇️ **Export data as CSV** (for Power BI/Tableau)
+- 🔗 **Embedded Power BI Dashboard** in web app
 
-bash
+---
 
-cd Student_Performance_Analytics
-Install frontend dependencies:
+## 📁 Folder Structure
 
-bash
+Student_Performance_Analytics/
+├── client/ # React frontend
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── PowerBIEmbed.jsx
+│ │ │ └── ExportButton.jsx
+│ │ └── App.jsx
+│ └── package.json
+├── server/ # Node.js backend
+│ ├── routes/
+│ │ └── exportData.js # CSV download route
+│ └── index.js
+└── README.md
 
+yaml
+Copy
+Edit
 
-cd frontend
-npm install
-Install backend dependencies:
+---
 
-bash
+## 📤 Export Data for Power BI
 
-cd backend
-npm install
-Set up your environment variables:
+User can export student performance data as a `.csv` file with one click:
 
-Copy the .env.example to .env and configure it with your database credentials and other API keys.
-
-Run the application:
-
-Frontend:
-
-bash
-
-cd frontend
-npm start
-This will start the React development server (usually on http://localhost:3000).
-
-Backend:
-
-bash
-
-cd backend
-npm start
-This will start the Node.js server (usually on http://localhost:5000).
-
-Open your browser and visit http://localhost:3000 to access the application.
+➡️ **URL**:  
+```bash
+GET /api/export-csv
+📥 CSV Format Example:
 
 
+name,roll,math,science
+Aman,101,85,92
+Ravi,102,78,80
+Simran,103,90,95
+📊 Embed Power BI Dashboard
+Power BI visuals are embedded directly inside the React dashboard.
 
-Analyze detailed student performance with interactive data visualization.
+🔧 How to Add Your Power BI Report
+Create visuals in Power BI Desktop
 
-🤖 Future Enhancements
-AI-Powered Predictions: Integrating AI models to predict future performance based on historical data.
+Publish to Power BI Service
 
-Multi-User Support: Adding roles for teachers, students, and admins for better management.
+Go to File > Embed > Website or Portal
 
-Export Reports: Option to export performance data in PDF/CSV format.
+Copy the embed link
 
-Improved Data Filters: Enhanced filtering options for performance analysis.
+Replace the iframe in PowerBIEmbed.jsx:
 
-💬 Contact
-For any questions or collaboration opportunities, feel free to reach out:
 
-Email: amankau2000@gmail.com
 
-GitHub: aman23-cmd
+<iframe
+  width="100%"
+  height="600"
+  src="https://app.powerbi.com/view?r=YOUR_REPORT_LINK"
+  frameBorder="0"
+  allowFullScreen
+></iframe>
+🧠 Future Enhancements
+🧑‍🏫 Admin dashboard for teachers
+
+🧠 AI-based student performance prediction
+
+📲 Mobile-friendly responsive design
+
+🔐 Role-based dashboards (student/teacher/admin)
+
+🙌 Author
+Aman Kaushal
+🎓 B.Tech CSE (AI) | Galgotias University
+🔗 GitHub - @aman23-cmd
+
+
+
+
