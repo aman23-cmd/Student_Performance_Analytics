@@ -1,6 +1,6 @@
 # Student Performance Analytics 🚀
 
-# 📊 Student Performance Analytics
+
 
 A full-stack web application to analyze and visualize student performance using modern web technologies and **Power BI integration**.
 
